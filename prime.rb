@@ -2,11 +2,11 @@ def prime?(integer)
   if integer >= 2 
     (2...integer).each do |divisor|
       if integer % divisor == 0  
-        FALSE
+        return FALSE
       end
     end
   else 
-    FALSE
+    return FALSE
   end
-   TRUE
+  return TRUE
 end
